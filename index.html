@@ -18,6 +18,7 @@
         <div class="form-container">
             <h1 class="heading">Say Hello!</h1>
             <form onsubmit="formSubmitted()" class="input-form" method="post">
+                
                 <div class="input-container">
                     <label class="input-label" for="input"> Your Name</label>
                     <input type="text" name="name" class="input" id="name" placeholder="Enter your name" onfocus="focused('name')" onblur="unFocused('name')">
@@ -30,7 +31,8 @@
 
                 <div class="input-container">
                     <label class="input-label" for="email"> Email </label>
-                    <input type="email" name="email" id="email" class="input" placeholder="Enter your email address" onfocus="focused('email')" onblur="unFocused('email')">
+                    <input type="email" name="email" id="email" class="input" placeholder="Enter your email address" onfocus="focused('email')"
+                        onblur="unFocused('email')">
 
                     <div class="email-error-container"></div>
                     <span class="email-error-text error-conatiner hidden">Verified email is required: ex@abc.xyz</span>
@@ -38,6 +40,7 @@
                         <i class="fas fa-exclamation-circle"></i>
                     </span>
                 </div>
+                
                 <div class="input-container custom-select">
                     <label class="input-label" for="services"> Needed Services</label>
                     <select name="services" id="services" class="input" style="width:200px;">
@@ -47,8 +50,8 @@
                         <option value="design">UI/UX Design</option>
                         <option value="services">Online Services</option>
                     </select>
-
                 </div>
+                
                 <div class="input-container custom-select">
                     <label class="input-label" for="budget"> Budget </label>
                     <select name="budget" id="budget" class="input">
@@ -57,18 +60,19 @@
                         <option value="2000">2000 $</option>
                         <option value="2500">2500 $</option>
                     </select>
-
                 </div>
+                
                 <div class="input-container">
                     <label class="input-label" for="message"> Message </label>
-                    <textarea name="message" id="message" class="input" cols="30" rows="5" placeholder="Your message here..." onfocus="focused('message')" onblur="unFocused('message')"></textarea>
-
-                        <div class="message-error-container"></div>
-                        <span class="message-error-text error-conatiner hidden">Message is required</span>
-                        <span class="message-error error hidden" onmouseover="showErrorBox('message')" onmouseout="hideErrorBox('message')">
-                            <i class="fas fa-exclamation-circle"></i>
-                        </span>
+                    <textarea name="message" id="message" class="input" cols="30" rows="5" placeholder="Your message here..." onfocus="focused('message')"
+                        onblur="unFocused('message')"></textarea>
+                    <div class="message-error-container"></div>
+                    <span class="message-error-text error-conatiner hidden">Message is required</span>
+                    <span class="message-error error hidden" onmouseover="showErrorBox('message')" onmouseout="hideErrorBox('message')">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </span>
                 </div>
+                
                 <div class="submit-container">
                     <button type="button" class="submit-button" onclick="formSubmitted()">Submit &nbsp
                         <i class="fas fa-long-arrow-alt-right submit-icon"></i>

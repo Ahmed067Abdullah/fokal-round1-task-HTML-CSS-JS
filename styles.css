@@ -58,6 +58,7 @@ body {
   font-size:17px;
   font-family: 'Poppins', sans-serif;
 }
+
 .input-label {
   display: block;
   margin-top: 20px;
@@ -71,43 +72,40 @@ body {
 .error{
   color : #c80000;
   z-index: 2;
-}
- .name-error{
   position: absolute;
-  top: 225px;
-  left: 1146px;
+}
+
+.name-error{
+  top: 226px;
+  left: 954px;
 }
 .email-error{
-  position: absolute;
   top : 322px;
-  left : 1146px;
+  left: 954px;
 }
 
 .message-error{
-  position: absolute;
   top : 644px;
-  left : 1146px;
+  left: 954px;
 }
 
 .name-error-text{
-  position: absolute;
-  top: 224px;
-  left: 1003px;
+  top: 226px;
+  left: 814px;
 }
 
 .email-error-text{
-  position: absolute;
-  top: 320px;
-  left: 839px;
+  top: 321px;
+  left: 648px;
 }
 
 .message-error-text{
-  position: absolute;
   top: 643px;
-  left: 979px;
+  left: 790px;
 } 
 
 .error-conatiner{
+  position: absolute;
   color: #c80000;
   background-color: white;
 }
@@ -121,8 +119,8 @@ body {
 
 .name-error-container{
   position: absolute;
-  top: 225px;
-  left: 998px;
+  top: 227px;
+  left: 807px;
   width: 160px;
   height: 13px;
 }
@@ -130,7 +128,7 @@ body {
 .email-error-container{
   position: absolute;
   top: 321px;
-  left: 834px;
+  left: 643px;
   width: 324px;
   height: 14px;
 }
@@ -138,7 +136,7 @@ body {
 .message-error-container{
   position: absolute;
   top: 643px;
-  left: 974px;
+  left: 786px;
   width: 181px;
   height: 14px;
 }
@@ -173,7 +171,7 @@ body {
   to {left: 10px;}
 }
 
-.submit-button:hover  .submit-icon {
+.submit-button:hover .submit-icon {
   animation-name: submit-button;
   animation-duration: 1s;    
   animation-fill-mode: linear;
@@ -183,12 +181,15 @@ body {
 .custom-select {
   position: relative;
 }
+
 .custom-select select {
   display: none; 
 }
+
 .select-selected {
   color: black !important;
 }
+
 .select-selected:after {
   position: absolute;
   content: "";
@@ -197,6 +198,7 @@ body {
   width: 0;
   height: 0;
 }
+
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #fff transparent;
   top: 7px;
@@ -213,6 +215,7 @@ body {
   border: 1px solid transparent;
   cursor: pointer;
 }
+
 .select-items {
   position: absolute;
   font-family: 'Poppins', sans-serif;
@@ -228,14 +231,13 @@ body {
 .select-hide {
   display: none;
 }
+
 .select-items div:hover,
 .same-as-selected {
   background: -webkit-linear-gradient(left, #00dbde, #fc00ff, #00dbde, #fc00ff);
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
-
 
 .custom-select {
   position: relative;
